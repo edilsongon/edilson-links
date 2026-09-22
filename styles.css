@@ -199,6 +199,15 @@ h1 span {
   content: "";
 }
 
+.card-art::after {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(90deg, transparent 58%, rgba(7, 17, 31, 0.55));
+  content: "";
+  pointer-events: none;
+}
+
 .card-content {
   display: flex;
   padding: 25px 27px 25px 25px;
@@ -264,103 +273,37 @@ h2 {
   text-transform: uppercase;
 }
 
-.art-chip {
+.prompt-logo {
   position: absolute;
-  top: 54px;
-  left: 40px;
-  padding: 7px 10px;
-  border: 1px solid rgba(255, 218, 131, 0.4);
-  border-radius: 8px;
-  background: rgba(5, 11, 19, 0.7);
-  color: var(--gold-light);
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 0.66rem;
-  font-weight: 700;
-  letter-spacing: 0.13em;
-}
-
-.art-line {
-  position: absolute;
-  left: 40px;
-  height: 7px;
-  border-radius: 99px;
-  background: rgba(255, 255, 255, 0.18);
-}
-
-.art-line-one {
-  top: 105px;
-  width: 92px;
-}
-
-.art-line-two {
-  top: 123px;
-  width: 66px;
-}
-
-.art-play {
-  position: absolute;
-  right: 35px;
-  bottom: 39px;
-  display: grid;
-  width: 48px;
-  height: 48px;
-  place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 15px;
-  background: rgba(240, 185, 75, 0.93);
-  box-shadow: 0 12px 30px rgba(240, 185, 75, 0.24);
-  color: #0c1724;
-  font-size: 0.91rem;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 82%;
+  height: 82%;
+  filter: drop-shadow(0 16px 22px rgba(0, 0, 0, 0.32));
+  object-fit: contain;
+  transform: translate(-50%, -50%);
 }
 
 .method-card .card-art {
-  background:
-    radial-gradient(circle at 50% 48%, rgba(240, 185, 75, 0.3), transparent 27%),
-    linear-gradient(145deg, #1b2c3d, #08121f);
+  background: #0b1724;
 }
 
-.art-badge {
+.method-photo {
   position: absolute;
-  top: 38px;
-  left: 39px;
-  color: var(--gold-light);
-  font-size: 0.65rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 34%;
+  transform: scale(1.035);
+  transition: transform 350ms ease;
 }
 
-.art-ai {
-  position: absolute;
-  top: 74px;
-  left: 52px;
-  z-index: 2;
-  color: var(--white);
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 3.2rem;
-  font-weight: 700;
-  letter-spacing: -0.11em;
-}
-
-.art-orbit {
-  position: absolute;
-  border: 1px solid rgba(255, 218, 131, 0.27);
-  border-radius: 50%;
-  transform: rotate(-25deg);
-}
-
-.orbit-one {
-  top: 63px;
-  left: 31px;
-  width: 115px;
-  height: 82px;
-}
-
-.orbit-two {
-  top: 56px;
-  left: 40px;
-  width: 98px;
-  height: 99px;
-  transform: rotate(34deg);
+.method-card:hover .method-photo,
+.method-card:focus-visible .method-photo {
+  transform: scale(1.075);
 }
 
 footer {
@@ -417,45 +360,23 @@ footer a:focus-visible {
     padding: 22px;
   }
 
-  .art-chip {
-    top: 35px;
-    left: 34px;
+  .card-art::after {
+    background: linear-gradient(180deg, transparent 60%, rgba(7, 17, 31, 0.55));
   }
 
-  .art-line-one {
-    top: 79px;
-    left: 34px;
+  .prompt-logo {
+    width: 116px;
+    height: 116px;
   }
 
-  .art-line-two {
-    top: 97px;
-    left: 34px;
+  .method-photo {
+    object-position: 50% 29%;
+    transform: scale(1.01);
   }
 
-  .art-play {
-    right: 30px;
-    bottom: 28px;
-  }
-
-  .art-badge {
-    top: 28px;
-    left: 33px;
-  }
-
-  .art-ai {
-    top: 52px;
-    left: 45px;
-    font-size: 2.8rem;
-  }
-
-  .orbit-one {
-    top: 42px;
-    left: 25px;
-  }
-
-  .orbit-two {
-    top: 34px;
-    left: 33px;
+  .method-card:hover .method-photo,
+  .method-card:focus-visible .method-photo {
+    transform: scale(1.045);
   }
 }
 

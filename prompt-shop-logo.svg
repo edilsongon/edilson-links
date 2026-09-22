@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Prompt Shop IA</title>
+  <desc id="desc">Sacola de compras com símbolo de prompt e brilho de inteligência artificial</desc>
+  <defs>
+    <linearGradient id="bag" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#173a5b"/>
+      <stop offset="1" stop-color="#091523"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffdc8a"/>
+      <stop offset="1" stop-color="#e6a934"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#f0b94b" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#f0b94b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".38"/>
+    </filter>
+  </defs>
+
+  <circle cx="256" cy="268" r="222" fill="url(#glow)"/>
+  <g filter="url(#shadow)">
+    <path d="M122 190c0-18 14-32 32-32h204c18 0 32 14 32 32l-16 206c-2 20-18 35-38 35H176c-20 0-36-15-38-35z" fill="url(#bag)" stroke="url(#gold)" stroke-width="8"/>
+    <path d="M190 171v-21c0-39 27-69 66-69s66 30 66 69v21" fill="none" stroke="#ffdc8a" stroke-width="12" stroke-linecap="round"/>
+    <rect x="171" y="225" width="170" height="112" rx="24" fill="#07111f" stroke="#ffffff" stroke-opacity=".16" stroke-width="3"/>
+    <path d="m205 261 31 20-31 20" fill="none" stroke="#ffdc8a" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M256 302h49" fill="none" stroke="#f8fbff" stroke-width="13" stroke-linecap="round"/>
+  </g>
+
+  <g fill="#ffdc8a">
+    <path d="M385 81c3 19 12 28 31 31-19 3-28 12-31 31-3-19-12-28-31-31 19-3 28-12 31-31z"/>
+    <path d="M426 148c2 11 7 16 18 18-11 2-16 7-18 18-2-11-7-16-18-18 11-2 16-7 18-18z" opacity=".72"/>
+  </g>
+</svg>
