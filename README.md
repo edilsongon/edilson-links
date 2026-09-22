@@ -19,4 +19,4 @@ O projeto é estático e não precisa instalar dependências. Envie também os
 arquivos `avatar.jpg` e `social-preview.png` para que a foto do perfil e a
 prévia de compartilhamento funcionem corretamente.
 
-Os cards também usam `prompt-shop-logo.svg` e `metodo-influencer.webp`.
+Os cards também usam `prompt-shop-visual.webp` e `metodo-influencer.webp`.
