@@ -84,23 +84,25 @@ a {
 }
 
 .brand-mark {
-  display: grid;
+  display: block;
   width: 82px;
   height: 82px;
   margin: 0 auto 17px;
-  place-items: center;
   border: 1px solid rgba(255, 218, 131, 0.55);
-  border-radius: 27px;
+  border-radius: 50%;
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.11), transparent),
     linear-gradient(145deg, #173a5b, #091523);
   box-shadow: 0 14px 38px rgba(0, 0, 0, 0.36), 0 0 34px rgba(240, 185, 75, 0.1);
-  color: var(--gold-light);
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: -0.05em;
   text-decoration: none;
+  overflow: hidden;
+}
+
+.brand-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .eyebrow {
@@ -397,8 +399,6 @@ footer a:focus-visible {
   .brand-mark {
     width: 72px;
     height: 72px;
-    border-radius: 23px;
-    font-size: 22px;
   }
 
   .offer-card {
