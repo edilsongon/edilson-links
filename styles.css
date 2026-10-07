@@ -126,7 +126,7 @@ h1 {
   letter-spacing: -0.045em;
 }
 
-h1 span {
+.title-separator {
   color: var(--gold);
 }
 
@@ -491,6 +491,19 @@ footer small {
 
   .profile {
     margin-bottom: 27px;
+  }
+
+  .profile-name,
+  .profile-topic {
+    display: block;
+  }
+
+  .title-separator {
+    display: none;
+  }
+
+  .profile-topic {
+    margin-top: 3px;
   }
 
   .brand-mark {
